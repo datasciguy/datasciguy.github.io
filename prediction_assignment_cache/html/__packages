@@ -1,0 +1,14 @@
+base
+dplyr
+ggplot2
+knitr
+lattice
+caret
+corrplot
+FSelector
+rgl
+foreach
+iterators
+doParallel
+scatterplot3d
+randomForest
