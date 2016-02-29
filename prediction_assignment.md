@@ -253,7 +253,7 @@ for(g in grouplist){
   
   if(dim(t)[2] == 4){
     
-    jpeg(filename = paste(g, ".jpeg", sep=""), 
+    jpeg(filename = paste("images/", g, ".jpeg", sep=""), 
         width = 400, 
         height = 400);
         
@@ -282,8 +282,9 @@ for(g in grouplist){
 #remove point color variable from training
 training$pcolor <- NULL;
 ```
+The image below shows the plot for the group of variables that start with "magnet_forearm":  
 
-![magnet_forearm](magnet_forearm.jpeg)  
+![](images/magnet_forearm.jpeg)
   
 For some real fun, check out the [rgl](https://cran.r-project.org/web/packages/rgl/index.html) package
 which allows you to rotate and zoom on a 3D plot -- and then save view as you see it!

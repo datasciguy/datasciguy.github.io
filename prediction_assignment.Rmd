@@ -1,12 +1,12 @@
 ---
 title: "Prediction Assignment Writeup"
 output:
+  html_document:
+    fig_caption: yes
+    keep_md: yes
   pdf_document:
     fig_caption: yes
     keep_tex: yes
-  html_document:
-    keep_md: yes
-    fig_caption: yes
 ---
 
 ```{r initialize, include=FALSE, eval=FALSE}
@@ -341,8 +341,9 @@ training$pcolor <- NULL;
 
 
 ```
+The image below shows the plot for the group of variables that start with "magnet_forearm":  
 
-![images/magnet_forearm](magnet_forearm.jpeg)  
+![](images/magnet_forearm.jpeg)
   
 For some real fun, check out the [rgl](https://cran.r-project.org/web/packages/rgl/index.html) package
 which allows you to rotate and zoom on a 3D plot -- and then save view as you see it!
